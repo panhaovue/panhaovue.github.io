@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Github+Hexo搭建博客</title>
+    <url>/2020/09/22/Github+Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<hr>
+<h4 id="1-安装Node-js"><a href="#1-安装Node-js" class="headerlink" title="1.安装Node.js"></a>1.安装Node.js</h4><p>下载<a href="https://nodejs.org/en/">Node.js</a>，并安装，不用修改设置。</p>
+<p>打开Windows Termainal，检查安装情况</p>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">❯ node -v</span><br><span class="line">v14.<span class="number">11</span>.<span class="number">0</span>```</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-安装Git并配置Git"><a href="#2-安装Git并配置Git" class="headerlink" title="2. 安装Git并配置Git"></a>2. 安装Git并配置Git</h4><p>下载<a href="https://git-scm.com/downloads">Git</a>，并安装，不用修改设置。</p>
+<p>打开Windows Termainal，检查安装情况</p>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">❯ git --version</span><br><span class="line">git version <span class="number">2</span>.<span class="number">28</span>.<span class="number">0</span>.windows.<span class="number">1</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="3-github创建仓库"><a href="#3-github创建仓库" class="headerlink" title="3. github创建仓库"></a>3. github创建仓库</h4><p>仓库名与用户名一致，即与下图蓝色区域一致</p>
+<p><img src="https://ftp.bmp.ovh/imgs/2020/09/db9ee6f5ea93c178.jpg" alt="创建仓库"></p>
+<h4 id="4-安装Hexo"><a href="#4-安装Hexo" class="headerlink" title="4. 安装Hexo"></a>4. 安装Hexo</h4><p>打开git bash</p>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">$ npm install -g hexo</span><br><span class="line">.....</span><br><span class="line">hexo@<span class="number">5</span>.<span class="number">2</span>.<span class="number">0</span></span><br><span class="line">added <span class="number">88</span> packages from <span class="number">348</span> contributors <span class="keyword">in</span> <span class="number">30</span>.<span class="number">6</span>s</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">❯ hexo -v</span><br><span class="line">hexo-cli: <span class="number">4</span>.<span class="number">2</span>.<span class="number">0</span></span><br><span class="line"><span class="function">os: <span class="title">Windows_NT</span> 10.0.19042 <span class="title">win32</span> <span class="title">x64</span></span></span><br><span class="line"><span class="function"><span class="title">node</span>: 14.11.0</span></span><br><span class="line"><span class="function"><span class="title">v8</span>: 8.4.371.19-<span class="title">node</span>.16</span></span><br><span class="line"><span class="function"><span class="title">uv</span>: 1.39.0</span></span><br><span class="line"><span class="function"><span class="title">zlib</span>: 1.2.11</span></span><br><span class="line"><span class="function"><span class="title">brotli</span>: 1.0.9</span></span><br><span class="line"><span class="function"><span class="title">ares</span>: 1.16.0</span></span><br><span class="line"><span class="function"><span class="title">modules</span>: 83</span></span><br><span class="line"><span class="function"><span class="title">nghttp2</span>: 1.41.0</span></span><br><span class="line"><span class="function"><span class="title">napi</span>: 6</span></span><br><span class="line"><span class="function"><span class="title">llhttp</span>: 2.1.2</span></span><br><span class="line"><span class="function"><span class="title">openssl</span>: 1.1.1<span class="title">g</span></span></span><br><span class="line"><span class="function"><span class="title">cldr</span>: 37.0</span></span><br><span class="line"><span class="function"><span class="title">icu</span>: 67.1</span></span><br><span class="line"><span class="function"><span class="title">tz</span>: 2020<span class="title">a</span></span></span><br><span class="line"><span class="function"><span class="title">unicode</span>: 13.0```</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="5-Hexo初始化"><a href="#5-Hexo初始化" class="headerlink" title="5.Hexo初始化"></a>5.Hexo初始化</h4><p>在本地创建与github仓库相同名的文件夹，即xxxxx.github.io。</p>
+<p>在文件夹内右键打开git bash，依次执行</p>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">$ hexo init   //初始化hexo</span><br><span class="line">$ npm install   //安装依赖包</span><br><span class="line">$ npm install hexo-deployer-git --save   //</span><br><span class="line">//本地查看</span><br><span class="line">$ hexo g       //生成静态文件</span><br><span class="line">$ hexo s       //启动本地服务</span><br></pre></td></tr></table></figure>
+
+<p>此时可以在本地查看，输入<a href="http://localhost:4000/">http://localhost:4000</a>，就可以打开页面。</p>
+<p>如果页面无法跳转，可以尝试改变端号，<code> hexo server -p 端口号</code>。</p>
+<p>Hexo博客文件夹目录结构如下：</p>
+<p><img src="https://ftp.bmp.ovh/imgs/2020/09/5be1b7093073ea2a.png" alt="Hexo博客目录结构"></p>
+<h4 id="6-使用主题并部署网站"><a href="#6-使用主题并部署网站" class="headerlink" title="6. 使用主题并部署网站"></a>6. 使用主题并部署网站</h4><p>使用Next主题</p>
+<p>在<code> xxxxx.github.io</code>主目录打开git bash here，输入：</p>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">$ git clone https://github.com/theme-next/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
+
+<p>在<code>_config.yml</code>里启用新主题：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># Extensions</span><br><span class="line">## Plugins: https:&#x2F;&#x2F;hexo.io&#x2F;plugins&#x2F;</span><br><span class="line">## Themes: https:&#x2F;&#x2F;hexo.io&#x2F;themes&#x2F;</span><br><span class="line">theme: landscape</span><br></pre></td></tr></table></figure>
+
+<p>将默认的<code>landscape</code>修改成<code>next</code>。</p>
+<p>进入Repository，复制项目xxxxx.github.io的 SSH码，在<code>deploy</code>后更改：</p>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line"><span class="function">deploy:</span></span><br><span class="line"><span class="function">  <span class="title">type</span>: <span class="title">git</span></span></span><br><span class="line"><span class="function">  <span class="title">repository</span>: <span class="title">git</span>@<span class="title">github.com:xxxxx</span>/<span class="title">xxxxx.github.io.git</span></span></span><br><span class="line"><span class="function">  <span class="title">branch</span>: <span class="title">master</span></span></span><br></pre></td></tr></table></figure>
+
+<p>修改主题：</p>
+<p>在theme目录下是主题的文件夹，里面有<code>_config.yml</code>，是主题的配置，可以修改。修改后，更新主题：</p>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> themes/主题名</span><br><span class="line">$ git pull</span><br></pre></td></tr></table></figure>
+
+<p>回到主目录，在git bash输入：</p>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> ..</span><br><span class="line">  $ <span class="built_in">cd</span> ..</span><br><span class="line">  $ hexo clean</span><br><span class="line">  $ hexo g  //(g = generate 修改生产)</span><br><span class="line">  $ hexo s  //(s = server   修改预览)</span><br><span class="line">  $ hexo d  //(d = deploy   修改部署) 网站上传部署到 GitHub Pages</span><br></pre></td></tr></table></figure>
+
+<p>此时可以打开<code>https://xxxxx.github.io</code>查看博客。</p>
+<h4 id="7-写文章并上传"><a href="#7-写文章并上传" class="headerlink" title="7. 写文章并上传"></a>7. 写文章并上传</h4><p>在<code> ..../xxxxx.github.io/source/_posts</code>打开git bash，输入：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo new &#39;文章名&#39;</span><br><span class="line">$ cd ..</span><br><span class="line">$ cd ..</span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
+
+<p>或者在文件开头手动加入如下格式 Front-matter ，写完后运行 <code>hexo g</code> 和 <code>hexo d</code> 发布。</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hello World # 标题</span><br><span class="line">date: 2019/3/26 hh:mm:ss # 时间</span><br><span class="line">categories: # 分类</span><br><span class="line">- Diary</span><br><span class="line">tags: # 标签</span><br><span class="line">- PS3</span><br><span class="line">- Games</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">摘要</span><br><span class="line">&lt;!--more--&gt;</span><br><span class="line">正文</span><br></pre></td></tr></table></figure>
+
+<h4 id="8-常用命令"><a href="#8-常用命令" class="headerlink" title="8. 常用命令"></a>8. 常用命令</h4><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">hexo new &quot;name&quot;       # 新建文章</span><br><span class="line">hexo new page &quot;name&quot;  # 新建页面</span><br><span class="line">hexo g                # 生成页面</span><br><span class="line">hexo d                # 部署</span><br><span class="line">hexo g -d             # 生成页面并部署</span><br><span class="line">hexo s                # 本地预览</span><br><span class="line">hexo clean            # 清除缓存和已生成的静态文件</span><br><span class="line">hexo help             # 帮助</span><br></pre></td></tr></table></figure>
+
+]]></content>
+  </entry>
+  <entry>
+    <title>安装并配置Git</title>
+    <url>/2020/09/23/%E5%AE%89%E8%A3%85%E5%B9%B6%E9%85%8D%E7%BD%AEGit/</url>
+    <content><![CDATA[<h1 id="安装Git并配置Git"><a href="#安装Git并配置Git" class="headerlink" title="安装Git并配置Git"></a>安装Git并配置Git</h1><h4 id="1-下载Git，并安装，不用修改设置。"><a href="#1-下载Git，并安装，不用修改设置。" class="headerlink" title="1. 下载Git，并安装，不用修改设置。"></a>1. 下载<a href="https://git-scm.com/downloads">Git</a>，并安装，不用修改设置。</h4><p>打开Windows Termainal，检查安装情况</p>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">❯  git --version</span><br><span class="line">git version <span class="number">2</span>.<span class="number">28</span>.<span class="number">0</span>.windows.<span class="number">1</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="2-配置Git"><a href="#2-配置Git" class="headerlink" title="2. 配置Git"></a>2. 配置Git</h4><ul>
+<li><p>右键 -&gt; Git Bash Here，<strong>设置用户名和邮箱</strong>：</p>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">$  git config --global user.name &quot;GitHub 用户名&quot;</span><br><span class="line">$  git config --global user.email &quot;GitHub 邮箱&quot;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>创建SSH Key，一直回车即可（也可以设置密码）</p>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C &quot;GitHub 邮箱&quot;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>github添加密匙</p>
+<p>进入目录 [C:\Users\用户名\.ssh] （要勾选显示“隐藏的项目”），用 id_rsa.pub 并复制所有内容。登陆 GitHub，进入 Settings 页面，选择左边栏的 SSH and GPG keys，点击 New SSH key。取个Title名字，粘贴 id_rsa.pub 内容到 Key 中，点击 Add SSH key 完成添加。</p>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">$ ssh -T git@github.com`</span><br><span class="line">  You’ve successfully authenticated…`</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+</li>
+</ul>
+]]></content>
+  </entry>
+</search>
