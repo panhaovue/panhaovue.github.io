@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>十二的夜</title>
+  <icon>http://example.com/icon.png</icon>
+  <subtitle>啊哈哈哈哈哈哈一个傻子</subtitle>
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2020-09-28T00:18:39.598Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>十二的夜</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>安装并配置Git</title>
+    <link href="http://example.com/2020/09/23/%E5%AE%89%E8%A3%85%E5%B9%B6%E9%85%8D%E7%BD%AEGit/"/>
+    <id>http://example.com/2020/09/23/%E5%AE%89%E8%A3%85%E5%B9%B6%E9%85%8D%E7%BD%AEGit/</id>
+    <published>2020-09-23T00:36:06.000Z</published>
+    <updated>2020-09-28T00:18:39.598Z</updated>
+    
+    
+    <summary type="html">安装并配置Git</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Github+Hexo搭建博客</title>
+    <link href="http://example.com/2020/09/22/Github+Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://example.com/2020/09/22/Github+Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</id>
+    <published>2020-09-22T02:16:44.000Z</published>
+    <updated>2020-09-28T00:18:16.386Z</updated>
+    
+    
+    <summary type="html">Github+Hexo搭建博客</summary>
+    
+    
+    
+    
+  </entry>
+  
+</feed>
