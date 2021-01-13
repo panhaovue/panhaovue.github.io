@@ -529,7 +529,7 @@
 
 </li>
 </ol>
-<h2 id="五、其他"><a href="#五、其他" class="headerlink" title="五、其他"></a>五、其他</h2><ol>
+<h4 id="五、其他"><a href="#五、其他" class="headerlink" title="五、其他"></a>五、其他</h4><ol>
 <li><p>picgo（app）的安装的module地址为<code>C:\Users\xxxx\AppData\Roaming\picgo\node_modules</code>、<code>C:\Users\xxxx\AppData\Roaming\npm\node_modules\picgo\node_modules</code></p>
 </li>
 <li><p>picdo-core的安装的module地址为<code>C:\Users\xxxx\.picgo\node_modules</code></p>
