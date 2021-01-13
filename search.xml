@@ -448,4 +448,116 @@
 </ul>
 ]]></content>
   </entry>
+  <entry>
+    <title></title>
+    <url>/2021/01/13/Typora+Picgo+GithubSM.MS%E5%AE%9E%E7%8E%B0%E5%9B%BE%E5%BA%8A/</url>
+    <content><![CDATA[<h2 id="Typora-PicGo-PicGo-core-SM-MS-Github实现图床"><a href="#Typora-PicGo-PicGo-core-SM-MS-Github实现图床" class="headerlink" title="Typora+PicGo/PicGo-core+SM.MS/Github实现图床"></a>Typora+PicGo/PicGo-core+SM.MS/Github实现图床</h2><hr>
+<p>title: Typora+PicGo/PicGo-core+SM.MS/Github实现图床 # 标题<br>date: 2021/1/13 hh:mm:ss # 时间<br>categories: # 分类</p>
+<ul>
+<li>learn<br>tags: # 标签</li>
+<li>Typora</li>
+<li>PicsGo</li>
+</ul>
+<hr>
+<p>在使用Typora时，之前一直都是在网上找一个图床，然后把要在MD文档插入的图片上传图床，再把链接插入到MD文档。这种方法实在是繁琐，一张两张图片还好，多了的话，完全不想再写文章。现在发现Typora可以设置自动上传图片，于是动手。</p>
+<a id="more"></a>
+
+<h4 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h4><p>在使用Typora时，之前一直都是在网上找一个图床，然后把要在MD文档插入的图片上传图床，再把链接插入到MD文档。这种方法实在是繁琐，一张两张图片还好，多了的话，完全不想再写文章。现在发现Typora可以设置自动上传图片，于是动手。</p>
+<blockquote>
+<p>图床是一个便于在博文中插入在线图片连接的个人图片仓库。设置图床之后，在自己博客中插入的图片链接就可以随时随地在线预览了，并且不会因为任何意外原因无法查看，除非自己亲自删除。</p>
+</blockquote>
+<h4 id="一、需用到的链接"><a href="#一、需用到的链接" class="headerlink" title="一、需用到的链接"></a>一、需用到的链接</h4><ul>
+<li><strong>Typora</strong>地址：<a href="https://typora.io/">https://typora.io/</a></li>
+<li><strong>nodejs</strong>地址：<a href="http://nodejs.cn/download/">http://nodejs.cn/download/</a></li>
+<li><strong>PicGo</strong>地址：<a href="https://github.com/Molunerfinn/picgo/releases">https://github.com/Molunerfinn/picgo/releases</a></li>
+<li><strong>SM.MS</strong>地址：<a href="https://sm.ms/">https://sm.ms/</a></li>
+<li><strong>github</strong>地址：<a href="https://github.com/">https://github.com/</a></li>
+</ul>
+<h4 id="二、安装"><a href="#二、安装" class="headerlink" title="二、安装"></a>二、安装</h4><p><strong>Typora</strong>、<strong>PicGo</strong>都是按步骤安装即可；</p>
+<p>如果使用<strong>PicGo-core</strong>，则在Typora的<strong>上传服务</strong>中选择<strong>PicGo-core</strong>。然后点击下载或更新，即可下载。</p>
+<p><img src="https://i.loli.net/2021/01/13/sxvGXZNqVtiYCP5.png" alt="image-20210113102319576"></p>
+<p>使用<strong>PicsGo-core</strong>需要安装<strong>nodejs</strong>，按步骤安装即可。</p>
+<h4 id="三、使用SM-MS作为图床"><a href="#三、使用SM-MS作为图床" class="headerlink" title="三、使用SM.MS作为图床"></a>三、使用SM.MS作为图床</h4><ol>
+<li>注册SM.MS账号</li>
+<li>进入个人页面，生成<strong>Secret Token</strong>，注册后可以直接打开这个链接<a href="https://sm.ms/home/apitoken">https://sm.ms/home/apitoken</a></li>
+</ol>
+<p><img src="https://i.loli.net/2021/01/13/vkSmM8hQlIKPpCA.png" alt="image-20210113091937985"></p>
+<ol start="3">
+<li><p>复制Token到PicGo即可</p>
+<p><img src="https://i.loli.net/2021/01/13/MpQSaj7O8hrzs2E.png" alt="image-20210113092136180"></p>
+</li>
+<li><p>使用<strong>PicGo（app）</strong></p>
+<ol>
+<li>在Typora里设置<ol>
+<li>将上传服务选为<strong>PicGo（app）</strong></li>
+<li>将PicGo路径设置为<strong>PicGo的安装路径</strong><br><img src="https://i.loli.net/2021/01/13/BUmVgozh7QaHN5f.png" alt="image-20210113093417019"></li>
+<li>点击<strong>验证图片上传选项</strong>，出现下列绿字即成功<br><img src="https://i.loli.net/2021/01/13/CIbzlTUeOyLmpqj.png" alt="image-20210113093622199"></li>
+<li>将插入图片时设置为<strong>上传图片</strong>可以自动上传，即<br><img src="https://i.loli.net/2021/01/13/fJeKcgYzH2jpd4D.png" alt="image-20210113093649078"></li>
+<li>或者可以在文档中粘贴图片时，右键点击图片，选择上传图片，手动操作。</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>使用<strong>PicsGo-core</strong></p>
+<ol>
+<li><p>安装插件<code>picgo-plugin-smms-user</code>，显示<code>[PicGo SUCCESS]:差护肩安装成功即可</code>。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd C:\Users\xxxx\AppData\Roaming\Typora\picgo\win64 &#x2F;&#x2F;先进入安装目录</span><br><span class="line">.\picgo.exe install smms-user</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>打开<strong>PicsGo-core</strong>的配置文件<code>config.json</code>，在安装处可以直接打开</p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">&quot;picBed&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;uploader&quot;</span>: <span class="string">&quot;smms-user&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;current&quot;</span>: <span class="string">&quot;smms-user&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;smms-user&quot;</span>: &#123;</span><br><span class="line">      <span class="attr">&quot;Authorization&quot;</span>: <span class="string">&quot;自己的token&quot;</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">&quot;transformer&quot;</span>: <span class="string">&quot;path&quot;</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">&quot;picgoPlugins&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;picgo-plugin-smms-user&quot;</span>: <span class="literal">true</span><span class="comment">// 启用插件</span></span><br><span class="line">  &#125;,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>点击<strong>验证图片上传选项</strong>，验证是否上传成功。</p>
+</li>
+</ol>
+</li>
+</ol>
+<h4 id="四、选择Github作为图床"><a href="#四、选择Github作为图床" class="headerlink" title="四、选择Github作为图床"></a>四、选择Github作为图床</h4><blockquote>
+<p>其实不推荐使用github，可以试试gitee。因为图片在typora中上传后，图片会裂开，需要魔法上网，无论是自己看还是别人看都麻烦了一些，毕竟我不是整天开着魔法。</p>
+</blockquote>
+<ol>
+<li><p>注册Github账号，创建一个token，按步骤setting-&gt;developer setting-&gt;personal access tokens-&gt;generate new token</p>
+</li>
+<li><p>创建仓库<strong>cdn-images</strong>，建立文件夹<strong>blog-images</strong></p>
+</li>
+<li><p>使用<strong>PicGo （app）</strong></p>
+<ol>
+<li><p>安装插件<code>github-plus</code></p>
+<p><img src="https://i.loli.net/2021/01/13/BKImd2iwTOjMxNn.png" alt="image-20210113111004154"> </p>
+</li>
+<li><p>设置。repo是仓库，格式：<code>&lt;用户名&gt;/&lt;仓库名称&gt;</code></p>
+<p><img src="https://i.loli.net/2021/01/13/hmUFfnZMqxv8IbT.png" alt="image-20210113111154331"></p>
+</li>
+<li><p>在typora中将上传服务选为<strong>PicGo（app）</strong>即可。</p>
+</li>
+</ol>
+</li>
+<li><p>使用<strong>PicGo-core</strong></p>
+<p>设置配置文件</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;picBed&quot;: &#123;</span><br><span class="line">    &quot;uploader&quot;: &quot;githubPlus&quot;,</span><br><span class="line">    &quot;current&quot;: &quot;githubPlus&quot;,</span><br><span class="line">    &quot;githubPlus&quot;: &#123;</span><br><span class="line">      &quot;branch&quot;: &quot;master&quot;, &#x2F;&#x2F; 仓库分支</span><br><span class="line">      &quot;customUrl&quot;: &quot;&quot;, &#x2F;&#x2F; 访问的自定义url</span><br><span class="line">      &quot;origin&quot;: &quot;github&quot;, &#x2F;&#x2F; 存放的图片类型</span><br><span class="line">      &quot;repo&quot;: &quot;&quot;, &#x2F;&#x2F; 存放图片的仓库</span><br><span class="line">      &quot;path&quot;: &quot;blog-images&quot;, &#x2F;&#x2F; 存放图片的仓库目录下的文件夹</span><br><span class="line">      &quot;token&quot;: &quot;自己的&quot;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  &quot;picgoPlugins&quot;: &#123;</span><br><span class="line">    &quot;picgo-plugin-github-plus&quot;: true, &#x2F;&#x2F; 启用github-plus插件</span><br><span class="line">    &quot;picgo-plugin-smms-user&quot;: true,</span><br><span class="line">    &quot;picgo-plugin-rename-file&quot;: true</span><br><span class="line">  &#125;,</span><br><span class="line">  &quot;picgo-plugin-github-plus&quot;: &#123;</span><br><span class="line">    &quot;lastSync&quot;: &quot;2021-01-13 11:20:39&quot;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h2 id="五、其他"><a href="#五、其他" class="headerlink" title="五、其他"></a>五、其他</h2><ol>
+<li><p>picgo（app）的安装的module地址为<code>C:\Users\xxxx\AppData\Roaming\picgo\node_modules</code>、<code>C:\Users\xxxx\AppData\Roaming\npm\node_modules\picgo\node_modules</code></p>
+</li>
+<li><p>picdo-core的安装的module地址为<code>C:\Users\xxxx\.picgo\node_modules</code></p>
+</li>
+<li><p>可以安装<code>rename-file</code>在上传的时候对图片进行重命名</p>
+<ol>
+<li><p>picgo（app）直接在应用搜索<strong>rename-file</strong>安装即可；</p>
+</li>
+<li><p>picdo-core安装方式：</p>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> C:\Users\用户名\AppData\Roaming\Typora\picgo\win64</span><br><span class="line">picgo install <span class="built_in">rename</span>-file</span><br></pre></td></tr></table></figure>
+
+<p>在配置文件中自己设定格式（可改可不改）：</p>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">&quot;picgo-plugin-rename-file&quot;: &#123;</span><br><span class="line">    &quot;format&quot;: &quot;&#123;y&#125;/&#123;m&#125;/&#123;d&#125;/&#123;hash&#125;-&#123;origin&#125;-&#123;rand:6&#125;&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ol>
+</li>
+</ol>
+]]></content>
+  </entry>
 </search>
