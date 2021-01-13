@@ -449,20 +449,12 @@
 ]]></content>
   </entry>
   <entry>
-    <title></title>
+    <title>Typora+PicGo/PicGo-core+SM.MS/Github实现图床</title>
     <url>/2021/01/13/Typora+Picgo+GithubSM.MS%E5%AE%9E%E7%8E%B0%E5%9B%BE%E5%BA%8A/</url>
-    <content><![CDATA[<h2 id="Typora-PicGo-PicGo-core-SM-MS-Github实现图床"><a href="#Typora-PicGo-PicGo-core-SM-MS-Github实现图床" class="headerlink" title="Typora+PicGo/PicGo-core+SM.MS/Github实现图床"></a>Typora+PicGo/PicGo-core+SM.MS/Github实现图床</h2><hr>
-<p>title: Typora+PicGo/PicGo-core+SM.MS/Github实现图床 # 标题<br>date: 2021/1/13 hh:mm:ss # 时间<br>categories: # 分类</p>
-<ul>
-<li>learn<br>tags: # 标签</li>
-<li>Typora</li>
-<li>PicsGo</li>
-</ul>
-<hr>
-<p>在使用Typora时，之前一直都是在网上找一个图床，然后把要在MD文档插入的图片上传图床，再把链接插入到MD文档。这种方法实在是繁琐，一张两张图片还好，多了的话，完全不想再写文章。现在发现Typora可以设置自动上传图片，于是动手。</p>
+    <content><![CDATA[<p>在使用Typora时，之前一直都是在网上找一个图床，然后把要在MD文档插入的图片上传图床，再把链接插入到MD文档。这种方法实在是繁琐，一张两张图片还好，多了的话，完全不想再写文章。现在发现Typora可以设置自动上传图片，于是动手。</p>
 <a id="more"></a>
 
-<h4 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h4><p>在使用Typora时，之前一直都是在网上找一个图床，然后把要在MD文档插入的图片上传图床，再把链接插入到MD文档。这种方法实在是繁琐，一张两张图片还好，多了的话，完全不想再写文章。现在发现Typora可以设置自动上传图片，于是动手。</p>
+<h2 id="Typora-PicGo-PicGo-core-SM-MS-Github实现图床"><a href="#Typora-PicGo-PicGo-core-SM-MS-Github实现图床" class="headerlink" title="Typora+PicGo/PicGo-core+SM.MS/Github实现图床"></a>Typora+PicGo/PicGo-core+SM.MS/Github实现图床</h2><h4 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h4><p>在使用Typora时，之前一直都是在网上找一个图床，然后把要在MD文档插入的图片上传图床，再把链接插入到MD文档。这种方法实在是繁琐，一张两张图片还好，多了的话，完全不想再写文章。现在发现Typora可以设置自动上传图片，于是动手。</p>
 <blockquote>
 <p>图床是一个便于在博文中插入在线图片连接的个人图片仓库。设置图床之后，在自己博客中插入的图片链接就可以随时随地在线预览了，并且不会因为任何意外原因无法查看，除非自己亲自删除。</p>
 </blockquote>
@@ -559,5 +551,12 @@
 </li>
 </ol>
 ]]></content>
+      <categories>
+        <category>learn</category>
+      </categories>
+      <tags>
+        <tag>Typora</tag>
+        <tag>PicsGo</tag>
+      </tags>
   </entry>
 </search>
