@@ -467,7 +467,8 @@
 </ul>
 <h4 id="二、安装"><a href="#二、安装" class="headerlink" title="二、安装"></a>二、安装</h4><p><strong>Typora</strong>、<strong>PicGo</strong>都是按步骤安装即可；</p>
 <p>如果使用<strong>PicGo-core</strong>，则在Typora的<strong>上传服务</strong>中选择<strong>PicGo-core</strong>。然后点击下载或更新，即可下载。</p>
-<p><img src="https://i.loli.net/2021/01/13/sxvGXZNqVtiYCP5.png" alt="image-20210113102319576"></p>
+<img src="https://i.loli.net/2021/01/13/sxvGXZNqVtiYCP5.png" alt="image-20210113102319576" style="zoom:50%;" />
+
 <p>使用<strong>PicsGo-core</strong>需要安装<strong>nodejs</strong>，按步骤安装即可。</p>
 <h4 id="三、使用SM-MS作为图床"><a href="#三、使用SM-MS作为图床" class="headerlink" title="三、使用SM.MS作为图床"></a>三、使用SM.MS作为图床</h4><ol>
 <li>注册SM.MS账号</li>
@@ -475,9 +476,10 @@
 </ol>
 <p><img src="https://i.loli.net/2021/01/13/vkSmM8hQlIKPpCA.png" alt="image-20210113091937985"></p>
 <ol start="3">
-<li><p>复制Token到PicGo即可</p>
+<li>复制Token到PicGo即可</li>
+</ol>
 <p><img src="https://i.loli.net/2021/01/13/MpQSaj7O8hrzs2E.png" alt="image-20210113092136180"></p>
-</li>
+<ol start="4">
 <li><p>使用<strong>PicGo（app）</strong></p>
 <ol>
 <li>在Typora里设置<ol>
@@ -492,7 +494,7 @@
 </li>
 <li><p>使用<strong>PicsGo-core</strong></p>
 <ol>
-<li><p>安装插件<code>picgo-plugin-smms-user</code>，显示<code>[PicGo SUCCESS]:差护肩安装成功即可</code>。</p>
+<li><p>安装插件<code>picgo-plugin-smms-user</code>，显示<code>[PicGo SUCCESS]:xxxxx </code>安装成功即可。</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd C:\Users\xxxx\AppData\Roaming\Typora\picgo\win64 &#x2F;&#x2F;先进入安装目录</span><br><span class="line">.\picgo.exe install smms-user</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>打开<strong>PicsGo-core</strong>的配置文件<code>config.json</code>，在安装处可以直接打开</p>
@@ -514,10 +516,10 @@
 <li><p>使用<strong>PicGo （app）</strong></p>
 <ol>
 <li><p>安装插件<code>github-plus</code></p>
-<p><img src="https://i.loli.net/2021/01/13/BKImd2iwTOjMxNn.png" alt="image-20210113111004154"> </p>
+<img src="https://i.loli.net/2021/01/13/BKImd2iwTOjMxNn.png" alt="image-20210113111004154" style="zoom:80%;" /> 
 </li>
 <li><p>设置。repo是仓库，格式：<code>&lt;用户名&gt;/&lt;仓库名称&gt;</code></p>
-<p><img src="https://i.loli.net/2021/01/13/hmUFfnZMqxv8IbT.png" alt="image-20210113111154331"></p>
+<img src="https://i.loli.net/2021/01/13/hmUFfnZMqxv8IbT.png" alt="image-20210113111154331" style="zoom:80%;" />
 </li>
 <li><p>在typora中将上传服务选为<strong>PicGo（app）</strong>即可。</p>
 </li>
